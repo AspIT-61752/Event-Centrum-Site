@@ -1,16 +1,115 @@
+:root {
+  --color-text-light: #fff;
+  --color-text-light-hover: hsl(209, 22%, 80%);
+  --color-text-dark: #3f3f3f;
+  --color-shadow: hsla(0, 0%, 25%, 0.74);
+  --color-aqua: #3b4c5c;
+  --color-light-blue: #76d1fe;
+  --color-gray: #272e38;
+  --color-light-gray: #2b353f;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-ol {
-  list-style: none;
+nav {
+  color: #fff;
+  background-color: var(--color-aqua);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  /* Checked with a color picker. It's just #fff */
+  color: white;
+
+  /* They've picked Arial */
+  font-family: Arial;
+}
+
+main {
+  height: 100%;
+
+  /* box-shadow doesn't work for some reason ¯\_(ツ)_/¯ */
+  box-shadow: 0 50px 4px 0 var(--color-shadow);
+
+  /* Removes a small white line caused by the image being .x px instead of .0 px */
+  margin-bottom: -4px;
+}
+
+article {
+  background-color: var(--color-light-blue);
+}
+
+footer {
+  background-color: var(--color-gray);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  /* padding-top is needed. The text isn't centered to the logo in the provided design (Opgave_Event_Centrum.pdf). */
+  padding-top: 1vh;
+  display: inline-flex;
 }
 
 a {
   text-decoration: none;
+  color: white;
 }
 
+/* ID's */
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 2vw;
+}
+
+/* Image, children and Call To Action */
+#media-image {
+  width: 100vw;
+  height: auto;
+  position: relative;
+}
+
+#media-image H1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 60%;
+}
+
+/* #media-image h2 */
+#media-image a {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: var(--color-text-light) 1px solid;
+  padding: 0.1% 0.4%;
+  padding-top: 0%;
+
+  cursor: pointer;
+}
+
+/* Classes */
 .center {
   text-align: center;
   margin: auto;
@@ -18,4 +117,9 @@ a {
 
 .width100 {
   width: 100%;
+}
+
+.hover-anim:hover {
+  transition: 0.4s;
+  color: var(--color-text-light-hover);
 }
