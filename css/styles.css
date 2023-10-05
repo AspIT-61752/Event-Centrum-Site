@@ -119,11 +119,13 @@ a {
   flex-direction: column;
   justify-content: flex-start;
 
+  padding: 1vh 0;
+
   background-color: var(--color-text-light);
   color: var(--color-gray);
 }
 
-#bulletpoints h2,
+#bulletpoints h4,
 #bulletpoints p {
   color: var(--color-gray);
 }
@@ -170,20 +172,42 @@ a {
   width: 50%;
 }
 
+.about-text {
+  /* TODO: Fix with https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+  /* A lot of text
+  Like a lot
+  * A ton of text here
+  more text here
+   */
+  /* ! Big oopsie */
+  /* ? Questions */
+  /* padding: 4vh 2vw; */
+  /* margin: 4vh 2vw; */
+}
+
+.about-text h2 {
+  font-size: 3em;
+  font-weight: lighter;
+}
+
 .bulletContainer {
   display: flex;
   flex-direction: row;
   padding: 1vw 4vw;
-  /* max-width: 90%; */
-  /* min-width: 20%; */
-  /* align-items: normal; */
-  /* flex-wrap: wrap; */
-  /* flex: 1; */
 }
 
 .bulletContainer img {
   width: 66px;
   height: 66px;
+}
+
+.bulletTextContainer {
+  margin-left: 1vw;
+  padding-top: 1vh;
+}
+
+.bulletTextContainer p {
+  padding-top: 0.5vh;
 }
 
 /* Phone users */
