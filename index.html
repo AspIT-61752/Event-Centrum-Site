@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Event Centrum hjemmeside professionelt eventbureau til booking af eleganet events for en lang række virksomheder og privatpersoner.">
+    <meta name="keywords"
+        content="Event, Events, Professionelt eventbureau, eventbureau til virksomheder, eventbureau til privatpersoner, eventbureau til privat">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Event Centrum</title>
 </head>
@@ -40,25 +44,117 @@
     </main>
 
     <!-- About -->
-    <article>
-        <h2>Hvem er vi</h2>
-        <p>
-            Event Centrum er et ambitiøst og topprofessionelt eventbureau med fuld fokus på slutproduktet og værdien for
-            deltagerne.
-        </p>
-        <p>
-            Gennem årene har virksomheden udviklet og realiseret events for en lang række virksomheder og
-            privatpersoner. Blandt vores gode venner finder man Vestas, Grundfos, Nordea, Danske Bank, Targit, Nordisk
-            film, H&M, Top Danmark og Spar Nord.
-        </p>
-        <p>
-            Læs hvad de siger om os, kig rundt og ellers velkommen indenfor på vort website.
-        </p>
+    <article id="about" class="flexRWrapper">
+
+        <!-- Left -->
+        <article class="flex50">
+            <h2>Hvem er vi</h2>
+            <p>
+                Event Centrum er et ambitiøst og topprofessionelt eventbureau med fuld fokus på slutproduktet og værdien
+                for
+                deltagerne.
+            </p>
+            <p>
+                Gennem årene har virksomheden udviklet og realiseret events for en lang række virksomheder og
+                privatpersoner. Blandt vores gode venner finder man Vestas, Grundfos, Nordea, Danske Bank, Targit,
+                Nordisk
+                film, H&M, Top Danmark og Spar Nord.
+            </p>
+            <p>
+                Læs hvad de siger om os, kig rundt og ellers velkommen indenfor på vort website.
+            </p>
+        </article>
+
+        <!-- Right -->
+        <article id="bulletpoints" class="flex50">
+
+            <!-- Date -->
+            <span class="bulletContainer">
+                <img src="./icons/1.png" alt="Kalender ikon">
+                <div>
+                    <h2>Du vælger datoen</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eos praesentium aspernatur
+                        quasi, maiores cupiditate aliquam, impedit voluptates ad, quo iure sint dolorem maxime. Ex,
+                        aperiam? Veritatis natus quo quas fuga porro dicta nostrum.
+                    </p>
+                </div>
+            </span>
+
+            <!-- Idea -->
+            <span class="bulletContainer">
+                <img src="./icons/2.png" alt="Lyspære ikon">
+                <div>
+                    <h2>Du vælger datoen</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto mollitia fugit in doloribus neque
+                        fugiat error, voluptatum quo sequi repellat dolorum, nostrum libero maxime!</p>
+                </div>
+            </span>
+
+            <span class="bulletContainer">
+                <img src="./icons/2.png" alt="Lyspære ikon">
+                <div>
+                    <h2>Du vælger datoen</h2>
+                    <p>
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quos consectetur doloribus,
+                        id itaque dolorem non?
+                    </p>
+                </div>
+            </span>
+
+            <!-- Connections -->
+            <span class="bulletContainer">
+                <img src="./icons/3.png" alt="2 pile krydser ikon">
+                <div>
+                    <h2>Du vælger datoen</h2>
+                    <p>Vi</p>
+                </div>
+            </span>
+        </article>
     </article>
 
     <!-- Contact -->
-    <footer>
-        <h1>Kontakt os</h1>
+    <footer id="footer" class="flexRWrapper">
+        <!-- Info -->
+        <article id="contactInformation" class="flex50">
+            <h1>Kontakt os</h1>
+            <p>
+                Event Centrum er et ambitiøst og topprofessionelt eventbureau med fuld fokus på slutproduktet og værdien
+                for
+                deltagerne.
+            </p>
+        </article>
+
+        <!-- Field -->
+        <article id="contact" class="flex50">
+            <form>
+
+                <!-- Name -->
+                <p>Send os en besked</p>
+                <p>
+                    <label for="fullName">Fulde Navn</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                </p>
+
+                <!-- Email -->
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="john-doe@gmail.com" required>
+                </p>
+
+                <!-- msg -->
+                <p>
+                    <label for="userMsg">Send os en besked</label><br>
+                    <!-- TODO: Edit cols and rows to CSS width and height -->
+                    <textarea name="userMsg" id="userMsg" cols="40" rows="6" placeholder="Din besked"
+                        required></textarea>
+                </p>
+
+                <!-- Submit -->
+                <input type="submit" value="Send besked">
+            </form>
+        </article>
     </footer>
 </body>
 
