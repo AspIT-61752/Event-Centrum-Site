@@ -12,26 +12,18 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-nav {
-  color: #fff;
-  background-color: var(--color-aqua);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
   /* Checked with a color picker. It's just #fff */
   color: white;
 
   /* They've picked Arial */
   font-family: Arial;
+
+  box-sizing: border-box;
+}
+
+nav {
+  color: #fff;
+  background-color: var(--color-aqua);
 }
 
 main {
@@ -86,7 +78,7 @@ a {
   position: relative;
 }
 
-#media-image H1 {
+#media-image h1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -115,7 +107,7 @@ a {
 
 #bulletpoints {
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   flex-direction: column;
   justify-content: flex-start;
 
@@ -173,15 +165,11 @@ a {
 }
 
 .about-text {
+  /* width: 50%; */
   /* TODO: Fix with https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
-  /* A lot of text
-  Like a lot
-  * A ton of text here
-  more text here
-   */
-  /* ! Big oopsie */
-  /* ? Questions */
-  /* padding: 4vh 2vw; */
+
+  padding: 4vh 2vw;
+  /* ? Can't have margins for some reason */
   /* margin: 4vh 2vw; */
 }
 

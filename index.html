@@ -16,9 +16,9 @@
 
     <!-- Nav bar -->
 
-    <head>
+    <header>
         <nav id="menu">
-            <!-- Added a <a> because a logo usually links to a websites homepage -->
+            <!-- Added a <a> because a logo usually links to the homepage -->
             <a href="#">
                 <img src="./icons/logo1.png" alt="Event Centrum Logo">
             </a>
@@ -29,140 +29,146 @@
                 <li><a href="#" class="hover-anim">Kontakt</a></li>
             </ul>
         </nav>
-    </head>
+        </head>
 
-    <!-- Image with Call To Action -->
-    <main class="width100">
-        <div id="media-image">
-            <img src="./images/upload/Event_Centrum_0000_Special.jpg" id="media-image"
-                alt="Event Centrum Special Event Billede">
-            <h1 class="center">Drømmer du om eksklusiv elegance til dit event?</h1>
-            <a href="#">
-                <h2 class="hover-anim">Læs mere</h2>
-            </a>
-        </div>
-    </main>
+        <!-- Image with Call To Action -->
+        <main class="width100">
+            <div id="media-image">
+                <img src="./images/upload/Event_Centrum_0000_Special.jpg" id="media-image"
+                    alt="Event Centrum Special Event Billede">
+                <h1 class="center">Drømmer du om eksklusiv elegance til dit event?</h1>
+                <a href="#">
+                    <h2 class="hover-anim">Læs mere</h2>
+                </a>
+            </div>
+        </main>
 
-    <!-- About -->
-    <article id="about" class="flexRWrapper">
+        <!-- About -->
+        <article id="about" class="flexRWrapper">
 
-        <!-- Left -->
-        <article class="flex50 about-text">
-            <span>
-                <h2>Hvem er vi</h2>
+            <!-- Left -->
+            <article class="flex50 about-text">
+                <span>
+                    <h2>Hvem er vi</h2>
+                    <p>
+                        Event Centrum er et ambitiøst og topprofessionelt eventbureau med fuld fokus på slutproduktet og
+                        værdien
+                        for
+                        deltagerne.
+                    </p>
+                    <p>
+                        Gennem årene har virksomheden udviklet og realiseret events for en lang række virksomheder og
+                        privatpersoner. Blandt vores gode venner finder man Vestas, Grundfos, Nordea, Danske Bank,
+                        Targit,
+                        Nordisk
+                        film, H&M, Top Danmark og Spar Nord.
+                    </p>
+                    <p>
+                        Læs hvad de siger om os, kig rundt og ellers velkommen indenfor på vort website.
+                    </p>
+                </span>
+            </article>
+
+            <!-- Right -->
+            <article id="bulletpoints" class="flex50">
+
+                <!-- Date -->
+                <span class="bulletContainer">
+                    <img src="./icons/1.png" alt="Kalender ikon">
+                    <div class="bulletTextContainer">
+                        <h4>Du vælger datoen</h4>
+                        <p>
+                            Vi er altid klar, Uanset hvornår du har behov for at en event skal løbe af stablen, leverer
+                            vi
+                            altid det bedste resultat
+                        </p>
+                    </div>
+                </span>
+
+                <!-- Idea -->
+                <span class="bulletContainer">
+                    <img src="./icons/2.png" alt="Lyspære ikon">
+                    <div class="bulletTextContainer">
+                        <h4>Vi er fyldt med gode ideer</h4>
+                        <p>
+                            Hvis du mangler lidt input til dit event har vi altid en bred vifte af ideer og muligheder
+                            du
+                            kan lade dig inspirere af.
+                        </p>
+                    </div>
+                </span>
+
+                <!-- Connections -->
+                <span class="bulletContainer">
+                    <img src="./icons/3.png" alt="2 pile krydser ikon">
+                    <div class="bulletTextContainer">
+                        <h4>Vi har forbindelserne i orden</h4>
+                        <p>
+                            Vort netværk af kendte kunstnere, foredragsholdere, bands, stand-up komikere og andre
+                            spændende
+                            personer er stort.
+                        </p>
+                    </div>
+                </span>
+
+                <!-- Communication -->
+                <span class="bulletContainer">
+                    <img src="./icons/4.png" alt="Telefon ikon">
+                    <div class="bulletTextContainer">
+                        <h4>Kontakten er det vigtigste</h4>
+                        <p>
+                            Vi tror på at god kommunikation med kunden er grundlaget for en succesfuld event. Derfor kan
+                            du
+                            altid få fat på os 24 - 7.
+                        </p>
+                    </div>
+                </span>
+            </article>
+        </article>
+
+        <!-- Contact -->
+        <footer id="footer" class="flexRWrapper">
+            <!-- Info -->
+            <article id="contactInformation" class="flex50">
+                <h1>Kontakt os</h1>
                 <p>
                     Event Centrum er et ambitiøst og topprofessionelt eventbureau med fuld fokus på slutproduktet og
                     værdien
                     for
                     deltagerne.
                 </p>
-                <p>
-                    Gennem årene har virksomheden udviklet og realiseret events for en lang række virksomheder og
-                    privatpersoner. Blandt vores gode venner finder man Vestas, Grundfos, Nordea, Danske Bank, Targit,
-                    Nordisk
-                    film, H&M, Top Danmark og Spar Nord.
-                </p>
-                <p>
-                    Læs hvad de siger om os, kig rundt og ellers velkommen indenfor på vort website.
-                </p>
-            </span>
-        </article>
+            </article>
 
-        <!-- Right -->
-        <article id="bulletpoints" class="flex50">
+            <!-- Field -->
+            <article id="contact" class="flex50">
+                <form>
 
-            <!-- Date -->
-            <span class="bulletContainer">
-                <img src="./icons/1.png" alt="Kalender ikon">
-                <div class="bulletTextContainer">
-                    <h4>Du vælger datoen</h4>
+                    <!-- Name -->
+                    <p>Send os en besked</p>
                     <p>
-                        Vi er altid klar, Uanset hvornår du har behov for at en event skal løbe af stablen, leverer vi
-                        altid det bedste resultat
+                        <label for="fullName">Fulde Navn</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
                     </p>
-                </div>
-            </span>
 
-            <!-- Idea -->
-            <span class="bulletContainer">
-                <img src="./icons/2.png" alt="Lyspære ikon">
-                <div class="bulletTextContainer">
-                    <h4>Vi er fyldt med gode ideer</h4>
+                    <!-- Email -->
                     <p>
-                        Hvis du mangler lidt input til dit event har vi altid en bred vifte af ideer og muligheder du
-                        kan lade dig inspirere af.
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="john-doe@gmail.com" required>
                     </p>
-                </div>
-            </span>
 
-            <!-- Connections -->
-            <span class="bulletContainer">
-                <img src="./icons/3.png" alt="2 pile krydser ikon">
-                <div class="bulletTextContainer">
-                    <h4>Vi har forbindelserne i orden</h4>
+                    <!-- msg -->
                     <p>
-                        Vort netværk af kendte kunstnere, foredragsholdere, bands, stand-up komikere og andre spændende
-                        personer er stort.
+                        <label for="userMsg">Send os en besked</label><br>
+                        <!-- TODO: Edit cols and rows to CSS width and height -->
+                        <textarea name="userMsg" id="userMsg" cols="40" rows="6" placeholder="Din besked"
+                            required></textarea>
                     </p>
-                </div>
-            </span>
 
-            <!-- Communication -->
-            <span class="bulletContainer">
-                <img src="./icons/4.png" alt="Telefon ikon">
-                <div class="bulletTextContainer">
-                    <h4>Kontakten er det vigtigste</h4>
-                    <p>
-                        Vi tror på at god kommunikation med kunden er grundlaget for en succesfuld event. Derfor kan du
-                        altid få fat på os 24 - 7.
-                    </p>
-                </div>
-            </span>
-        </article>
-    </article>
-
-    <!-- Contact -->
-    <footer id="footer" class="flexRWrapper">
-        <!-- Info -->
-        <article id="contactInformation" class="flex50">
-            <h1>Kontakt os</h1>
-            <p>
-                Event Centrum er et ambitiøst og topprofessionelt eventbureau med fuld fokus på slutproduktet og værdien
-                for
-                deltagerne.
-            </p>
-        </article>
-
-        <!-- Field -->
-        <article id="contact" class="flex50">
-            <form>
-
-                <!-- Name -->
-                <p>Send os en besked</p>
-                <p>
-                    <label for="fullName">Fulde Navn</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
-                </p>
-
-                <!-- Email -->
-                <p>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="john-doe@gmail.com" required>
-                </p>
-
-                <!-- msg -->
-                <p>
-                    <label for="userMsg">Send os en besked</label><br>
-                    <!-- TODO: Edit cols and rows to CSS width and height -->
-                    <textarea name="userMsg" id="userMsg" cols="40" rows="6" placeholder="Din besked"
-                        required></textarea>
-                </p>
-
-                <!-- Submit -->
-                <input type="submit" value="Send besked">
-            </form>
-        </article>
-    </footer>
+                    <!-- Submit -->
+                    <input type="submit" value="Send besked">
+                </form>
+            </article>
+        </footer>
 </body>
 
 </html>
