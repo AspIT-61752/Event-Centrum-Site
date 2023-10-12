@@ -2,9 +2,11 @@
 
 ## Due date
 
-10 Oct 2023 15:00
+13 Oct 2023 15:00
 
 ### Husk Semantik
+
+[Naming Convention](<https://en.wikipedia.org/wiki/Naming_convention_(programming)#Examples_of_multiple-word_identifier_formats>)
 
 ```css
 .nav-link {

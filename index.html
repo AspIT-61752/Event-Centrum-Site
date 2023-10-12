@@ -8,7 +8,10 @@
         content="Event Centrum hjemmeside professionelt eventbureau til booking af eleganet events for en lang række virksomheder og privatpersoner.">
     <meta name="keywords"
         content="Event, Events, Professionelt eventbureau, eventbureau til virksomheder, eventbureau til privatpersoner, eventbureau til privat">
+    <!-- Font Awesome 4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+
     <title>Event Centrum</title>
 </head>
 
@@ -137,25 +140,37 @@
                 </p>
 
                 <!-- Contact info -->
-                <div>
-                    <span>
-                        <img src="./icons/d.png" alt="Lokalition ikon">
+                <div class="contact-links">
+                    <!-- Address -->
+                    <span class="flex-right-wrapper contact-wrapper">
+                        <div class="contact-icon-container">
+                            <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <!-- <img src="./icons/d.png" alt="Lokalition ikon"> -->
                         <a href="https://www.google.com/maps/place/Ydesvej+5,+8500+Grenå/" target="_blank">
                             <h5>Adresse</h5>
                             <p>Ydesvej 5, 8500 Grenå</p>
                         </a>
                     </span>
 
-                    <span>
-                        <img src="./icons/c.png" alt="Telefon ikon">
+                    <!-- Telephone -->
+                    <span class="flex-right-wrapper contact-wrapper">
+                        <!-- #83e800 -->
+                        <div class="contact-icon-container">
+                            <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <!-- <img src="./icons/c.png" alt="Telefon ikon"> -->
                         <a href="tel:+45-85-85-85-85">
                             <h5>Ring til os</h5>
                             <p>Tlf. 85 85 85 85</p>
                         </a>
                     </span>
 
-                    <span>
-                        <img src="./icons/a.png" alt="Mail ikon">
+                    <!-- Mail -->
+                    <span class="flex-right-wrapper contact-wrapper">
+                        <div class="contact-icon-container">
+                            <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                        </div>
                         <a href="mailto:info@eventcentrum.dk">
                             <h5>Send en mail</h5>
                             <p>info@eventcentrum.dk</p>
@@ -166,32 +181,42 @@
 
             <!-- Field -->
             <article id="contact" class="flex50">
-                <form>
-
-                    <!-- Name -->
+                <div class="input-field">
                     <p>Send os en besked</p>
-                    <p>
-                        <label for="fullName">Fulde Navn</label>
-                        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
-                    </p>
+                    <form>
 
-                    <!-- Email -->
-                    <p>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="john-doe@gmail.com" required>
-                    </p>
+                        <!-- Name -->
+                        <p>
+                            <label for="fullName">Fulde Navn</label>
+                            <input class="contact-forms" type="text" id="fullName" name="fullName"
+                                placeholder="John Doe" required>
+                        </p>
 
-                    <!-- msg -->
-                    <p>
-                        <label for="userMsg">Send os en besked</label><br>
-                        <!-- TODO: Edit cols and rows to CSS width and height -->
-                        <textarea name="userMsg" id="userMsg" cols="40" rows="6" placeholder="Din besked"
-                            required></textarea>
-                    </p>
+                        <!-- Email -->
+                        <p>
+                            <label for="email">Email</label>
+                            <input class="contact-forms" type="email" name="email" id="email"
+                                placeholder="john-doe@gmail.com" required>
+                        </p>
 
-                    <!-- Submit -->
-                    <input type="submit" value="Send besked">
-                </form>
+                        <!-- msg -->
+                        <p>
+                            <label for="userMsg">Send os en besked</label><br>
+                            <!-- TODO: Edit cols and rows to CSS width and height -->
+                            <textarea class="contact-forms" name="userMsg" id="userMsg" cols="40" rows="6"
+                                placeholder="Din besked" required></textarea>
+                        </p>
+
+                        <!-- Submit -->
+                        <button class="contact-forms submit-form" type="submit" value="Send">
+                            <span class="flex-wrapper just-cont">
+                                <i class="fa fa-envelope-o fa-2x" aria-hidden="true">
+                                </i>
+                                <p class="center-height"> Send</p>
+                            </span>
+                        </button>
+                    </form>
+                </div>
             </article>
         </footer>
 </body>
